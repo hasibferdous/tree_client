@@ -1,0 +1,181 @@
+{
+  "trees": [
+    {
+      "id": "1",
+      "species": "Maple Tree",
+      "height": "8-10 feet",
+      "price": "149.99",
+      "description": "A beautiful maple tree with vibrant autumn colors.",
+      "image": "https://images.unsplash.com/photo-1653279820926-7fb90cd51da3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Deciduous"
+    },
+    {
+      "id": "2",
+      "species": "Pine Tree",
+      "height": "6-8 feet",
+      "price": "99.99",
+      "description": "A majestic pine tree perfect for landscaping and privacy.",
+      "image": "https://images.unsplash.com/photo-1609607313983-0d49b370284f?q=80&w=1576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Evergreen"
+    },
+    {
+      "id": "3",
+      "species": "Cherry Blossom Tree",
+      "height": "5-7 feet",
+      "price": "129.99",
+      "description": "An elegant cherry blossom tree that blooms in spring.",
+      "image": "https://plus.unsplash.com/premium_photo-1680033007478-e485dce5dd77?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Flowering"
+    },
+    {
+      "id": "4",
+      "species": "Oak Tree",
+      "height": "10-12 feet",
+      "price": "199.99",
+      "description": "A sturdy oak tree with sprawling branches and lush foliage.",
+      "image": "https://images.unsplash.com/photo-1633030935409-129d2e2cc9d7?q=80&w=1577&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Deciduous"
+    },
+    {
+      "id": "5",
+      "species": "Straw Berry Tree ",
+      "height": "4-5 feet",
+      "price": "149.99",
+      "description": "A fruit-bearing tree that produces delicious fruits.",
+      "image": "https://images.unsplash.com/photo-1693279940356-1046300c96ff?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Fruit"
+    },
+    {
+      "id": "6",
+      "species": "Willow Tree",
+      "height": "8-10 feet",
+      "price": "179.99",
+      "description": "A graceful willow tree with long, drooping branches.",
+      "image": "https://images.unsplash.com/photo-1567909237179-e35dfeef481f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Deciduous"
+    },
+    {
+      "id": "7",
+      "species": "Palm Tree",
+      "height": "7-9 feet",
+      "price": "119.99",
+      "description": "A tropical palm tree with fan-shaped leaves.",
+      "image": "https://plus.unsplash.com/premium_photo-1677105700617-ef1a38a115c9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Tropical"
+    },
+    {
+      "id": "8",
+      "species": "Cypress Tree",
+      "height": "6-8 feet",
+      "price": "139.99",
+      "description": "A slender cypress tree commonly found in wetlands.",
+      "image": "https://images.unsplash.com/photo-1502770513380-138d6d3a51dd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Evergreen"
+    },
+    {
+      "id": "9",
+      "species": "Birch Tree",
+      "height": "8-10 feet",
+      "price": "169.99",
+      "description": "A birch tree known for its distinctive white bark.",
+      "image": "https://images.unsplash.com/photo-1507614498949-edbabc86a14f?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Deciduous"
+    },
+    {
+      "id": "10",
+      "species": "Magnolia Tree",
+      "height": "5-7 feet",
+      "price": "159.99",
+      "description": "A fragrant magnolia tree with large, showy flowers.",
+      "image": "https://plus.unsplash.com/premium_photo-1675863732862-4260e05a4188?q=80&w=1494&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Flowering"
+    },
+    {
+      "id": "11",
+      "species": "Redwood Tree",
+      "height": "12-14 feet",
+      "price": "299.99",
+      "description": "A majestic redwood tree towering over the forest canopy.",
+      "image": "https://images.unsplash.com/photo-1563725866049-39655b76893b?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Evergreen"
+    },
+    {
+      "id": "12",
+      "species": "Dogwood Tree",
+      "height": "6-8 feet",
+      "price": "129.99",
+      "description": "A dogwood tree adorned with clusters of white or pink flowers.",
+      "image": "https://images.unsplash.com/photo-1618060687645-db4704e8d4ed?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Flowering"
+    },
+    {
+      "id": "13",
+      "species": "Peach Tree",
+      "height": "6-8 feet",
+      "price": "139.99",
+      "description": "A peach tree bearing juicy, sweet fruits in summer.",
+      "image": "https://images.unsplash.com/photo-1565769583756-fe3ffffcae49?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Fruit"
+    },
+    {
+      "id": "14",
+      "species": "Palm Tree",
+      "height": "7-9 feet",
+      "price": "119.99",
+      "description": "A palm tree with a trunk covered in diamond-shaped patterns.",
+      "image": "https://plus.unsplash.com/premium_photo-1677105700617-ef1a38a115c9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Tropical"
+    },
+    {
+      "id": "15",
+      "species": "Juniper Tree",
+      "height": "5-7 feet",
+      "price": "129.99",
+      "description": "A fragrant juniper tree with blue-green foliage.",
+      "image": "https://images.unsplash.com/photo-1649772582729-6134be765e12?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Evergreen"
+    }
+  ],
+  "categories": [
+    {
+      "title": "Deciduous",
+      "id": "1"
+    },
+    {
+      "title": "Evergreen",
+      "id": "2"
+    },
+    {
+      "title": "Flowering",
+      "id": "3"
+    },
+    {
+      "title": "Fruit",
+      "id": "4"
+    },
+    {
+      "title": "Tropical",
+      "id": "5"
+    },
+    {
+      "title": "Coniferous",
+      "id": "6"
+    },
+    {
+      "title": "Palm",
+      "id": "7"
+    },
+    {
+      "title": "Shade",
+      "id": "8"
+    },
+    {
+      "title": "Ornamental",
+      "id": "9"
+    },
+    {
+      "title": "Bamboo",
+      "id": "10"
+    }
+  ]
+}

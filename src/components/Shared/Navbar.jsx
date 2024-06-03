@@ -1,79 +1,158 @@
-const Navbar = () => {
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
+import { auth } from "../../firebase/firebase.config";
+import { Link } from "react-router-dom";
+import { CgLogOut } from "react-icons/cg";
+
+export default function Navbar() {
+  const [user] = useAuthState(auth);
+  const [signOut] = useSignOut(auth);
+
+  const handleLogout = async () => {
+    await signOut();
+  };
   return (
-    <div>
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+    <div className="navbar bg-slate-200 sticky top-0 px-16 z-10 font-bold">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className=" lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
             <li>
-              <a>Item 1</a>
+              <Link to={"/alltree"}>All Trees</Link>
+            </li>
+            {/* <li>
+              <Link to={"/categories"}>Categories</Link>
+            </li> */}
+            <li>
+              <Link to={"/faq"}>FAQ</Link>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <Link to={"/blogs"}>Blogs</Link>
             </li>
             <li>
-              <a>Item 3</a>
+              <Link to={"/about"}>About Us</Link>
+            </li>
+            <li>
+              <Link to={"/contact"}>Contact Us</Link>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
-        </div>
+        <Link to={"/"} className=" text-xl">
+          Tree Emporium
+        </Link>
       </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="flex items-center gap-6 px-1">
+          <li>
+            <Link
+              to={"/alltree"}
+              className="hover:bg-green-200 p-3 bg-slate-200 rounded-xl"
+            >
+              All Trees
+            </Link>
+          </li>
+          {/* <li>
+            <Link
+              to={"/categories"}
+              className="hover:bg-green-200 p-3 bg-slate-200 rounded-xl"
+            >
+              Categories
+            </Link>
+          </li> */}
+          <li>
+            <Link
+              to={"/faq"}
+              className="hover:bg-green-200 p-3 bg-slate-200 rounded-xl"
+            >
+              FAQ
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={"/blogs"}
+              className="hover:bg-green-200 p-3 bg-slate-200 rounded-xl"
+            >
+              Blogs
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={"/about"}
+              className="hover:bg-green-200 p-3 bg-slate-200 rounded-xl"
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={"/contact"}
+              className="hover:bg-green-200 p-3 bg-slate-200 rounded-xl"
+            >
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
+      {!user?.email ? (
+        <div className="navbar-end flex gap-4">
+          <Link to={"/login"} className="btn">
+            Login
+          </Link>
+          <Link to={"/register"} className="btn">
+            Registration
+          </Link>
+        </div>
+      ) : (
+        <div className="navbar-end flex gap-4">
+          <>
+            <div className="dropdown dropdown-end flex flex-row gap-2">
+              <div>
+                <Link to={"/dashboard"} className="btn">
+                  Dashboard
+                </Link>
+              </div>
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <Link to={"/dashboard"}>
+                    <img
+                      alt="#"
+                      src={
+                        user?.photoURL != null
+                          ? user?.photoURL
+                          : `https://ui-avatars.com/api/?name=${user?.displayName}&color=7F9CF5&background=EBF4FF`
+                      }
+                    />
+                  </Link>
+                </div>
+              </label>
+            </div>
+          </>
+          <Link
+            className="gap-1 items-center text-center"
+            onClick={handleLogout}
+          >
+            {" "}
+            <CgLogOut></CgLogOut>Logout
+          </Link>
+        </div>
+      )}
     </div>
   );
-};
-
-export default Navbar;
+}
